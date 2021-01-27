@@ -1,0 +1,54 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[centertags]{amsmath}
+\usepackage{graphicx}
+\usepackage{caption3}
+\usepackage{misccorr}
+\usepackage{epsfig}
+\usepackage{indentfirst}
+\usepackage{ulem}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{setspace}
+\usepackage{amssymb,amsfonts,amsmath,mathtext,braket,stmaryrd,mathrsfs}
+\usepackage{cite}
+\usepackage{subfigure}
+\bibliographystyle{iopart-num}
+\usepackage{geometry} % пакет для задания полей страницы командой \geometry
+\geometry{left=3cm,right=1.5cm,top=2cm,bottom=2cm}
+\numberwithin{equation}{section}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\rot}{rot}
+\DeclareMathOperator{\diver}{div}
+\DeclareMathOperator{\w}{w}
+\DeclareMathOperator{\Q}{Q}
+\DeclareMathOperator{\Z}{Z}
+\DeclareMathOperator{\F}{F}
+\DeclareMathOperator{\M}{M}
+\DeclareMathOperator{\q}{q}
+\DeclareMathOperator{\g}{g}
+\DeclareMathOperator{\h}{h}
+\DeclareMathOperator{\e}{e}
+\DeclareMathOperator{\vp}{\mathbf {v.p.}}
+\makeatletter
+\renewcommand \thesection {\@arabic\c@section}
+\renewcommand\thesubsection {\thesection.\@arabic\c@subsection}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+%\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+\linespread{1.3} % полтора интервала. Если 1.6, то два интервала
+\renewcommand{\appendix}{\setcounter{section}{0}\gdef\thesection{\@Alph\c@section}}
+
+
+\pagestyle{plain}
+
+\begin{document}
+
+\begin{equation}
+    \label{C1_common}
+    \begin{array}{lcl}
+         C_1 = -2E_0\left[Bi\left(\xi_L\right)\frac{\sqrt{\omega_L^2-\omega^2}}{c}\gamma+\xi'Bi\,'\left(\xi_L\right)\right]\times \\
+       \left\{\left[Bi\left(\xi_0\right)-i\left(\frac{c}{\omega z_0}\right)^{1/3}Bi\,'\left(\xi_0\right)\right]\left[Ai\left(\xi_L\right)\frac{\sqrt{\omega_L^2-\omega^2}}{c}\gamma+\xi'Ai\,'\left(\xi_L\right)\right] - \right.\\ 
+       \left.\left[Ai\left(\xi_0\right)-i\left(\frac{c}{\omega z_0}\right)^{1/3}Ai\,'\left(\xi_0\right)\right]\left[Bi\left(\xi_L\right)\frac{\sqrt{\omega_L^2-\omega^2}}{c}\gamma+\xi'Bi\,'\left(\xi_L\right)\right]\right\}^{-1},
+    \end{array}
+\end{equation}
+
+\end{document}
